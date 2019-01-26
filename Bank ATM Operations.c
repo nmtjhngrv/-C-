@@ -11,7 +11,6 @@ int main() {
 	scanf("%d", &operation);
 		
 	switch(operation){
-		
 		    case 1:
 		    	printf("Your Balance:%d\n",balance);
 		    	printf("Cash Amount :");
@@ -40,12 +39,15 @@ int main() {
 		    	scanf("%d",&amount);
 		if(amount>balance){
 			   printf("You balance is not enough\n");
-		   }
+		   
+		}
+			else {
+			
 		    balance-=amount;
 		    printf("Balance: %d",balance);
-		  
+	
 		break;
-		
+		}
 			case 4:
 			
 		printf("Balance %d",balance);
@@ -54,15 +56,10 @@ int main() {
 			case 5:
 				
 		printf("Card Refunded:");		
-	    break;
-		
-		
+	        break;
 		
 			default:
-			printf("Unknown Operation:");
-			
-			
-		
+			printf("Unknown Operation:")
 		
 	}
 	
